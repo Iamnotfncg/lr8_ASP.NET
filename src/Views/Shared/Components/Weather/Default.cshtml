@@ -1,0 +1,13 @@
+﻿@model lr9.ViewComponents.WeatherResponse
+<h2>Weather Information</h2>
+
+@if (Model != null)
+{
+    <p>City: @ViewBag.City</p>
+    <p>Temperature: @Model.Main.Temp K</p>
+    <p>Weather Description: @Model.Weather[0]?.Description</p>
+}
+else
+{
+    <p>No weather information available.</p>
+}

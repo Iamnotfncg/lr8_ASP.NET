@@ -1,0 +1,5 @@
+﻿@model List<lr9.Product>
+
+@await Component.InvokeAsync("Product")
+
+@await Component.InvokeAsync("Weather", ViewBag.City)
